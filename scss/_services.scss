@@ -1,0 +1,36 @@
+.services {
+  background-color: $black;
+  padding: 103px 0;
+  &-items {
+    display: flex;
+    gap: 30px;
+    color: $bg-grey;
+    text-align: center;
+    text-wrap: balance;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      gap: 48px;
+      align-items: center;
+    }
+  }
+  &-item {
+    & img {
+      height: 33px;
+    }
+    &-title {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    &-desc {
+      margin-top: 16px;
+      font-weight: 300;
+    }
+    @media (max-width: 900px) {
+      max-width: 400px;
+    }
+    @media (max-width: 650px) {
+      max-width: 350px;
+    }
+  }
+}

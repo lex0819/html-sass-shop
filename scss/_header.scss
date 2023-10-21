@@ -1,0 +1,56 @@
+.header {
+  background-color: $bg-rose;
+  margin-top: 75px;
+  &-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    @media (max-width: 650px) {
+      flex-direction: column;
+      gap: 0;
+      height: 363px;
+    }
+    justify-content: center;
+    align-items: center;
+    &_item {
+      width: 50%;
+      @media (max-width: 650px) {
+        width: 80%;
+      }
+      & img {
+        @media (max-width: 650px) {
+          display: none;
+        }
+      }
+    }
+  }
+  &-title {
+    border-left: 12px solid $rose;
+    padding-left: 16px;
+  }
+  & h1 {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 48px;
+    font-weight: 900;
+    @media (max-width: 900px) {
+      font-size: 44px;
+    }
+    @media (max-width: 650px) {
+      font-size: 38px;
+    }
+  }
+  & p {
+    font-size: 32px;
+    font-weight: 700;
+    @media (max-width: 900px) {
+      font-size: 24px;
+    }
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+    & span {
+      color: $rose;
+    }
+  }
+}

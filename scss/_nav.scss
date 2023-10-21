@@ -1,0 +1,98 @@
+.nav-bg {
+  background-color: $black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  background-color: $black;
+  & ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    & li {
+      cursor: pointer;
+      padding: 20px;
+    }
+  }
+}
+
+.menu-hide {
+  @media (max-width: 650px) {
+    display: none;
+  }
+}
+.card-icon {
+  position: relative;
+  ::after {
+    content: '5';
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    color: $white;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    width: 19px;
+    height: 19px;
+    background-color: $rose;
+    border-radius: 50%;
+  }
+}
+
+.burger-menu {
+  display: none;
+  width: 0;
+  position: absolute;
+  top: 75px;
+  right: -250px;
+  left: auto;
+  background-color: $white;
+
+  &_items {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 16px 33px;
+
+    & h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: $black;
+      margin-bottom: 4px;
+    }
+  }
+  &_item {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+      color: $rose;
+    }
+    &_links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12px;
+      margin-left: 21px;
+      gap: 11px;
+      color: $menu-grey;
+    }
+  }
+}
+.buregr-close {
+  width: 13px;
+  align-self: flex-end;
+}
+.menu-show_start {
+  display: block;
+  width: 232px;
+  right: -250px;
+  transition: all 0.6s;
+}
+.menu-show_end {
+  right: 0;
+}

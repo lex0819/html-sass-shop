@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}

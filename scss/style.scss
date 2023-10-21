@@ -1,0 +1,16 @@
+@import '_reset.scss';
+@import '_constants.scss';
+@import '_nav.scss';
+@import '_header.scss';
+@import '_cats.scss';
+
+@import '_services.scss';
+@import '_customers.scss';
+@import '_footer.scss';
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: $paddings;
+  padding-right: $paddings;
+}
